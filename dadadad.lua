@@ -37,13 +37,6 @@ until start
 World1 = game.PlaceId == 2753915549
 World2 = game.PlaceId == 4442272183
 World3 = game.PlaceId == 7449423635
-
--- Check if in a valid sea
-if not (World1 or World2 or World3) then
-    plr:Kick("❌ Error : A[12] Not in a Blox Fruits Sea ❌")
-else
-    Sea = true
-end
 Marines = function()
     replicated.Remotes.CommF_:InvokeServer("SetTeam", "Marines")
 end
